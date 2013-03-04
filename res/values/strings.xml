@@ -4970,4 +4970,16 @@
     <string name="gestures_action_recent">Recent applications</string>
 
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
+    <!-- **** TEAM OSIRIS EDITS BEGIN **** -->
+
+    <!-- Settings | About -->
+    <string name="learn_more_title">Team Osiris</string>
+    <string name="Osiris_website_title">Team Osiris Website</string>
+    <string name="Osiris_website_summary">Visit Our Website</string>
+    <string name="Osiris_source_title">Team Osiris Github</string>
+    <string name="Osiris_source_summary">View Our Project</string>
+    <string name="Osiris_irc_title">Team Osiris IRC</string>
+    <string name="Osiris_irc_summary">IRC Freenode #OsirisTM</string>
+    <string name="devs">TeamOsiris</string>
+    <string name="about_Team_Osiris_title">About</string>
 </resources>
