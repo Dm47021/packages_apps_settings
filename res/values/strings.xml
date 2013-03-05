@@ -4982,4 +4982,11 @@
     <string name="Osiris_irc_summary">IRC Freenode #OsirisTM</string>
     <string name="devs">TeamOsiris</string>
     <string name="about_Team_Osiris_title">About</string>
+    <string name="about_osiris_title">About</string>
+    
+
+    <!-- Settings | Headers -->
+    <string name="sugarkang_category_title">SUGARKANG</string>
+    <string name="sugar_rush_title">Sugar Rush</string>
+    <!-- Settings | Options -->
 </resources>

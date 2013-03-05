@@ -49,6 +49,16 @@
         <intent android:action="com.android.settings.OPERATOR_APPLICATION_SETTING" />
     </header>
 
+    <!-- SUGAR KANG -->
+    <header android:title="@string/sugarkang_category_title" />
+
+    <!-- Sugar Kang Settings -->
+    <header
+        android:id="@+id/Sugar_rush"
+        android:icon="@drawable/ic_settings_sugar"
+        android:title="@string/sugar_rush_title"
+        android:fragment="com.android.settings.osiris.SugarRush" />
+
     <!-- Other wireless and network controls -->
     <header
         android:id="@+id/wireless_settings"
