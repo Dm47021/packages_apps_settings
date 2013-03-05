@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.cyanogen.settings.osiris;
+package com.android.settings.osiris;
 
 import android.content.Intent;
 import android.net.Uri;
