@@ -81,8 +81,6 @@ public class InterfaceSettings extends SettingsPreferenceFragment
     private ColorPickerPreference mLockscreenEffectColor;
     Random randomGenerator = new Random();
 
-    private File customnavTemp;
-    private int seekbarProgress;
     String mCustomLabelText = null;
 
     int newDensityValue;
@@ -189,10 +187,6 @@ public class InterfaceSettings extends SettingsPreferenceFragment
         return false;
     }
 
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        inflater.inflate(R.menu.user_interface, menu);
-    }
 
     public void copy(File src, File dst) throws IOException {
         InputStream in = new FileInputStream(src);

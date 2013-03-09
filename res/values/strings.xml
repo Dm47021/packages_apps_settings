@@ -4874,9 +4874,6 @@
          device cannot be read from internal settings. [CHAR LIMIT=60] -->
     <string name="verifier_device_identifier_not_available">Device information not available</string>
 
-    <!-- Kill app long-press back -->
-    <string name="kill_app_longpress_back">Kill app back button</string>
-    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
 
     <!-- Hostname setting -->
     <string name="device_hostname">Device hostname</string>
@@ -4988,6 +4985,8 @@
     <!-- Settings | Headers -->
     <string name="sugarkang_category_title">SUGARKANG</string>
     <string name="sugar_rush_title">Sugar Rush</string>
+    <string name="color_effect_title">Lockscreen Wave Effect Color</string>
+    <string name="color_effect_summary">Adjusts color of the Lockscreen wave effect's color</string>
     <!-- Settings | Options -->
 
     <!-- Customization | Interface -->
