@@ -4985,8 +4985,9 @@
     <!-- Settings | Headers -->
     <string name="sugarkang_category_title">SUGARKANG</string>
     <string name="sugar_rush_title">Sugar Rush</string>
+    <string name="interface_settings_title">Interface Settings</string>
     <string name="color_effect_title">Lockscreen Wave Effect Color</string>
-    <string name="color_effect_summary">Adjusts color of the Lockscreen wave effect's color</string>
+    <string name="color_effect_summary">Adjusts color of the Lockscreen wave effect\'s color</string>
     <!-- Settings | Options -->
 
     <!-- Customization | Interface -->
