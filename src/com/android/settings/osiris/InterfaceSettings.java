@@ -41,6 +41,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemProperties;
 import android.preference.CheckBoxPreference;
+import android.preference.ColorPickerPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -73,8 +74,11 @@ public class InterfaceSettings extends SettingsPreferenceFragment
     public static final String TAG = "InterfaceSettings";
     private static final String PREF_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
 
+    private static final String LOCKSCREEN_COLOR_EFFECT = "lockscreen_color_effect";
+
     Preference mCustomLabel;
     Preference mLcdDensity;
+    private ColorPickerPreference mLockscreenEffectColor;
     Random randomGenerator = new Random();
 
     private File customnavTemp;
@@ -106,6 +110,10 @@ public class InterfaceSettings extends SettingsPreferenceFragment
 
         mCustomLabel = findPreference(PREF_CUSTOM_CARRIER_LABEL);
         updateCustomLabelTextSummary();
+
+        mLockscreenEffectColor = (ColorPickerPreference) prefSet.findPreference(LOCKSCREEN_COLOR_EFFECT);
+        mLockscreenEffectColor.setOnPreferenceChangeListener(this);
+        mLockscreenEffectColor.setAlphaSliderEnabled(true);
         
         setHasOptionsMenu(true);
     }
@@ -167,8 +175,17 @@ public class InterfaceSettings extends SettingsPreferenceFragment
     }
 
     @Override
-    public boolean onPreferenceChange(Preference preference, Object value) {
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
         final String key = preference.getKey();
+	if (preference == mLockscreenEffectColor) {
+            String hex = ColorPickerPreference.convertToARGB(Integer
+            		.valueOf(String.valueOf(newValue)));
+            preference.setSummary(hex);
+            int intHex = ColorPickerPreference.convertToColorInt(hex);
+            Settings.System.putInt(getActivity().getContentResolver(),
+            		Settings.System.LOCKSCREEN_COLOR_EFFECT, intHex);
+            return true;
+        }
         return false;
     }
 
