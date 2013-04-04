@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.settings.liquid;
+package com.android.settings.osiris;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -53,6 +53,7 @@ public class DensityChanger extends SettingsPreferenceFragment
     Preference mClearMarketData;
     Preference mOpenMarket;
     ListPreference mCustomDensity;
+    public Context mContext;
 
     private static final int MSG_DATA_CLEARED = 500;
     private static final int DIALOG_DENSITY = 101;

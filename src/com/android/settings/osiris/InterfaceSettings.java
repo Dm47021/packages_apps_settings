@@ -67,6 +67,7 @@ import com.android.settings.Utils;
 import com.android.settings.util.Helpers;
 import com.android.settings.util.CMDProcessor;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.osiris.DensityChanger;
 
 public class InterfaceSettings extends SettingsPreferenceFragment
 			implements Preference.OnPreferenceChangeListener {
@@ -75,6 +76,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment
     private static final String PREF_CUSTOM_CARRIER_LABEL = "custom_carrier_label";
 
     private static final String LOCKSCREEN_COLOR_EFFECT = "lockscreen_color_effect";
+    public Context mContext;
 
     Preference mCustomLabel;
     Preference mLcdDensity;
