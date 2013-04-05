@@ -23,8 +23,10 @@
         <PreferenceScreen
             android:key="@+id/about_teamosiris"
             android:title="@string/about_osiris_title"
-	    android:icon="@drawable/ic_osiris_about"
+	        android:icon="@drawable/ic_osiris_about"
             android:fragment="com.android.settings.osiris.about_teamosiris" />
+            
+            
 
     </PreferenceCategory>
 
